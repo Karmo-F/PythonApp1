@@ -137,3 +137,180 @@ else:
 print("Arve nr: 000000000")
 print(arve)
 print(f"Kokku: {summa}£")
+#eesnimi=input("Sisesta eesnimi: ")
+
+#if eesnimi.lower()=="juku":
+    #print("Lähme Jukuga kinno")
+#if eesnimi.upper()=="JUKU":
+    #print("Ära karju Juku")
+    #vanus = int(input("Sisesta vanus: "))
+    #if 0<vanus<=6:
+        #pilet="tasuta pilet"
+  #  elif 6<vanus<=14:
+        #pilet="lastepilet"
+    #elif 14<vanus<=65:
+       # pilet="täispilet"
+   # elif 65<vanus<=100:
+       # pilet="sooduspilet"
+   # else:
+        #pilet="tundamatu pilet"
+   # print("Juku vajab",pilet)
+#else:
+    #print("täna kinno ei minda.")
+
+#pinginaabrid=["Mati", "Kati"]
+#nimi1=input("Sisesta esimese inimese nimi: ")
+#nimi2=input("Sisesta teise inimese nimi:")
+#print(f"Tere {nimi1.capitalize()} ja {nimi2.capitalize()}")
+
+#if nimi1.isalpha() and nimi2.isalpha():
+    #if nimi1 in pinginaabrid and nimi2 in pinginaabrid:
+        #print("Te olete täna pinginaabrid")
+    #else:
+        #print("Te ei ole täna pinginaabrid")
+#else:
+    #print("Palun sisestage kehtivad nimed")
+
+#pikkus = float(input("Sisesta pikkus: "))
+#laius = float(input("Sisesta laius: "))
+#pindala=pikkus*laius
+#print(f"Toa põranda pindala on {round(pindala, 2)} ruutmeetrit")
+#remont=input("Kas soovid remonti teha (jah/ei): ").lower()
+#if remont=="jah":
+    #print("Teeme remonti")
+    #try:
+        #rm_hind=float(input("Sisesta ruutmeetrid hind: "))
+        #remondi_hind=pindala*rm_hind
+        #ise=input("Kas teed ise? (jah/ei): ").lower()
+        #if ise=="jah":
+            #print(f"Remondi koguhind on {round(remondi_hind, 2)}eurot. ")
+        #else:
+            #try:
+                #töö_hind=float(input("Sisesta töö hind hind ruutmeetri kohta: "))
+                #koguhind=remondi_hind+(pindala+töö_hind)
+                #print(f"Remondi koguhind koos tööga on {round(koguhind, 2)} eurot. ")
+            #except ValueError:
+                #print("Palun sisesta kehtiv number töö hinna jaoks. ")
+    #except ValueError:
+        #print("Palun sisesta kehtiv number.")
+#else:
+    #print("Remonti ei tee")
+#try:
+    #alghind=float(input("mis on toote hind"))
+    #if alghind>700:
+        #lõpphind=alghind*0.7
+    #else:
+        #lõpphind=alghind
+    #print(f"lõplik hind on {round(lõpphind, 2)} eurot.")
+#except:
+    #print("Palun sisesta kehtiv number alghinna jaoks.")'
+
+
+#try:
+    #temperatuur=float(input("Mis on toa temperatuur: "))
+    #if temperatuur>18:
+        #print("See on soovitatav soojus") 
+    #else:
+        #print("Toa temperatuur on liiga külm")
+#except ValueError:
+    #print("Palun sisestage kehtiv number")
+#sugu=input("Sugu: ")
+#if sugu.lower()=="m" or sugu.lower()=="mees":
+    #try:
+        #pikkus=int(input("Sisesta pikkus: "))
+       #if 75<pikkus<150:
+          #print("Sa oled kääbik")
+       #elif 150<=pikkus<170:
+          #print("Oled ikka lühike")
+       #elif 170<=pikkus<250:
+          #print("Ära valeta")
+       #else:
+          #print("Sa valetad või oled liiga lühike")
+    #except ValueError:
+    #print("Viga: kasuta numbreid")
+#elif sugu.lower()=="n" or sugu.lower()=="naine":
+    #try:
+    #pikkus=int(input("Sisesta pikkus: "))
+        #if 55<pikkus<145:
+          #print("Sa oled kääbik")
+        #elif 145<=pikkus<165:
+            #print("Oled ikka lühike")
+        #elif 165<=pikkus<240:
+             #print("Ära valeta")
+        #else:
+             #print("Sa valetad või oled liiga lühike")
+    #except ValueError:
+        #print("Viga: kasuta numbreid")
+#else:
+    #print("Viga")
+
+#summa=0
+#from random import*
+#arve="Toode Kogus Hind Kokku\n"
+#valik=input("Kas soovid osta piima? jah/ei: ")
+#if valik.lower()=="jah" :
+    #kogus=input("Mitu: ")
+    #if kogus.isdigit():
+        #kogus=int(kogus)
+        #p_hind=round(uniform(0.5,3),2)
+       # print("Piima hind on {p_hind}")
+       # arve+=f"piim {kogus} {p_hind}£ {round(kogus*p_hind,2)}£\n"
+       # summa+=kogus*p_hind
+  # else:
+   #     print("Viga: vale kogus")
+#else:
+ #   print("Selge: piima ei taha")
+#valik=input("Kas soovid osta sai? jah/ei: ")
+#if valik.lower()=="jah" :
+   # kogus=input("Mitu: ")
+   # if kogus.isdigit():
+       # kogus=int(kogus)
+       # p_hind=(uniform(0.7,3),2)
+       # print("Sai hind on {p_hind}")
+       # arve+=f"piim {kogus} {p_hind}£ {round(kogus*p_hind,2)} £\n"
+       # summa+=kogus*p_hind
+    #else:
+        #print("Viga: vale kogus")
+#else:
+    #print("Selge: saia ei taha")
+#print("Arve nr: 000000000")
+#print(arve)
+#print(f"Kokku: {summa}£")
+
+#try:
+    #print("Nelinurga kontroll")
+    #a=float(input("Külg üks: "))
+    #b=float(input("Külg kaks: "))
+    #c=float(input("Külg kolm: "))
+    #d=float(input("Külg neli: "))
+    #if a>0 and b>0 and c>0 and d>0:
+        #print("küljed on positiivsed")
+        #if a==b==c==d:
+            #print("See on ruut")
+        #else:
+            #print("Need on nelinurga küljed")
+    #else:
+        #print("Viga: küljed > 0")
+#except ValueError:
+    #print("Viga: täisarv")
+tehed=["+", "-", "*", "/"]
+try:
+    arv1=float(input("Sisestage arv üks"))
+    arv2=float(input("Sisestage arv kaks"))
+    tehe=input("Sisestage tehe: ")
+    if tehe in tehed:
+        if tehe=="+":
+            print(f"{arv1}{tehe}{arv2}={arv1+arv2}")
+        elif tehe=="-":
+            print(f"{arv1}{tehe}{arv2}={arv1-arv2}")
+        elif tehe=="*":
+            print(f"{arv1}{tehe}{arv2}={arv1*arv2}")
+        elif tehe=="/":
+            if arv2==0:
+                print("DIV/0")
+            else:
+                print(f"{arv1}{tehe}{arv2}={arv1/arv2}")
+    else:
+        print("Tundmatu tehtemärk")
+except ValueError:
+    print("Viga: sisestage arvud")
