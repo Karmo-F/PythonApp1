@@ -3,3 +3,103 @@
     <Build Project="false" />
   </Project>
 </Solution>
+#Loo uus projekt.
+#Kopeeri antud kood failisse.
+#Otsi ja paranda programmis vead.
+#Lisa kommentaar, kus kirjelda, mis parandatud oli.
+#Kood:
+
+try:
+    print("Ruutvorrandi lahendamine")
+    a=float(input("Sisesta a => "))
+    b=float(input("Sisesta b => "))
+    c=float(input("Sisesta c => "))
+    D=b*b-4*a*c
+    if D>0:
+        x1=(-b+D**0.5)/2*a
+        x2=(-b-D**0.5)/(2*a)
+        print("Kaks lahendit:", x1, x2)
+        if D==0:
+           x=-b/(2*a)
+           print("Üks lahend:", x) 
+    else:
+        print("Reaalarvulised lahendid puuduvad")
+except ValueError:
+    print("Viga: sisestage arvud ")
+#olid vead sulgudega ja float ei olnud pandud try oli puudu ja valueerror ka 
+try:
+    print("Palga arvutamine")
+    tunnid=float(input("Sisesta tootunnid nadalas => "))
+    tunnitasu=float(input("Sisesta tunnitasu {€} => "))
+    if tunnid<0 and tunnid>168:
+        print("Vigane tundide arv")
+    else:
+        if tunnid<=40:
+            palk=tunnid*tunnitasu
+            print("Nadalapalk:", palk, "€")
+    elif:
+        palk=40*tunnitasu+(tunnid-40)*tunnitasu*1,5
+        print("Nadalapalk koos uletundidega:", palk, "€")
+except ValueError:
+    print("Viga: sisestatud andmetega")
+#olid vead try ja error oli puudu ees oli tühi print ja elif ja else olid vahtuses
+print("Parkimise hind")
+tunnid=int(input("Sisesta parkimise aeg tundides => "))
+if tunnid=<0:
+    print("Vigane aeg")
+else:
+   tunnid>=3
+   print("Hind: 5 €")
+elif:
+    tunnid>=8:
+    print("Hind: 10 € (päevapilet)")
+elif:
+    print("Hind: 2 €")
+#olid vead elif oli else ees paigutus oli vale
+
+
+
+
+#Programmi tulemus:
+
+#Ruutvõrrandi lahendamine
+#Sisesta a => 2
+#Sisesta b => -6
+#Sisesta c => 4
+#Kaks lahendit: 2.0 1.0
+
+#Palga arvutamine
+#Sisesta töötunnid nädalas => 45
+#Sisesta tunnitasu (€) => 10
+#Nädalapalk koos ületundidega: 475.0 €
+
+#Parkimise hind
+#Sisesta parkimise aeg tundides => 10
+#Hind: 10 € (päevapilet)
+
+#Lisaülesanne:
+
+#Muuda programmi nii, et alguses kuvatakse menüü ja kasutaja valib, millist osa käivitada:
+ 
+#Vali programm:
+#1 - Ruutvõrrand
+#2 - Palga arvutamine
+#3 - Parkimise hind
+#Sisesta valik (1-3) =>
+#Käivitub ainult valitud osa. Kui kasutaja sisestab midagi muud kui 1, 2 või 3, kuvatakse teade Vigane valik.
+
+#Lisa ruutvõrrandi osasse kontroll: kui a = 0, kuvatakse teade Tegemist ei ole ruutvõrrandiga.
+#Palga osa ei tohi lubada sisestada nulli või negatiivset tunnitasu.
+#Lisaülesande tulemus (näide):
+
+ 
+#Vali programm:
+#1 - Ruutvõrrand
+#2 - Palga arvutamine
+#3 - Parkimise hind
+#Sisesta valik (1-3) => 1
+#Ruutvõrrandi lahendamine
+#Sisesta a => 0
+#Sisesta b => 1
+#Sisesta c => 1
+#Tegemist ei ole ruutvõrrandiga
