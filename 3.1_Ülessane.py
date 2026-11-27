@@ -72,18 +72,18 @@ while True:
     else:
         print("Tundmatu valik.")
 
-#2 0
+#2 0 Antud on naturaalarvud 1-st kuni 50-ni. Leia nende arvude summa, mis jaguvad 5 või 7-ga. 
 summa = 0
 for arv in range(1, 51):
     if arv % 5 == 0 or arv % 7 == 0:
         summa += arv
-#2 1
+#2 1 Klaviatuurilt sisestatakse 10 arvu – nii positiivseid kui ka negatiivseid. Asenda kõik negatiivsed arvud nende absoluutväärtustega ja väljasta saadud 10 arvu.
 print("Summa on:", summa)
 arvud = []
 for i in range(10):
     arv = float(input(f"Sisesta {i + 1}. arv: "))
     arvud.append(abs(arv))
-#2 2
+#2 2 Leia arvude 100 kuni 200 summa, mis on 17-ga jaguvad.
 print("Tulemus:", arvud)
 summa = 0
 for arv in range(100, 201):
@@ -93,7 +93,7 @@ for arv in range(100, 201):
 a = float(input("Sisesta ringi keskpunkti x-koordinaat (a): "))
 b = float(input("Sisesta ringi keskpunkti y-koordinaat (b): "))
 r = float(input("Sisesta ringi raadius R: "))
-#2 3
+#2 3 Arvutisse sisestatakse N punkti koordinaadid. Määrata, mitu neist punktidest jääb raadiusega R ringi sisse, mille keskpunkt on punktis (a, b)
 ringis_punkte = 0
 for i in range(n):
     x = float(input(f"Sisesta {i + 1}. punkti x: "))
@@ -102,7 +102,7 @@ for i in range(n):
         ringis_punkte += 1
 
 print("Ringi sisse jääb punkte:", ringis_punkte)
-# 2 4
+# 2 4 Arvutisse sisestatakse järjest N õpilase pikkused. Määrata klasside õpilaste keskmine pikkus.
 n = int(input("Sisesta õpilaste arv N: "))
 pikkuste_summa = 0
 
