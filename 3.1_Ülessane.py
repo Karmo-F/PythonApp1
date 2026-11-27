@@ -1,0 +1,121 @@
+while True:
+    print("Vali ülesanne 1–5, 0 väljumiseks:")
+    valik = input("Sisesta valik: ")
+
+    if valik == "1":
+        print("Ülesanne 1")
+        for i in range(15):
+            try:
+                arv = float(input(f"Sisesta {i + 1}. arv: "))
+                if arv.is_integer():
+                    print(f"{int(arv)} on täisarv.")
+                else:
+                    print(f"{arv} ei ole täisarv.")
+            except ValueError:
+                print("Sisestatud väärtus ei ole arv.")
+
+    elif valik == "2":
+        summa = 0
+        try:
+            A = int(input("Sisesta arv A: "))
+            if A < 1:
+                print("A peab olema naturaalarv (1 või suurem).")
+            else:
+                for i in range(1, A + 1):
+                    summa += i
+                print(f"Naturaalarvude summa vahemikus 1 kuni {A} on: {summa}")
+        except ValueError:
+            print("Sisestatud väärtus ei ole täisarv.")
+
+    elif valik == "3":
+        korrutis = 1
+        for i in range(8):
+            try:
+                arv = float(input(f"Sisesta {i + 1}. arv: "))
+                if arv > 0:
+                    korrutis *= arv
+            except ValueError:
+                print("Sisestatud väärtus ei ole arv.")
+        print(f"Positiivsete arvude korrutis on: {korrutis}")
+
+    elif valik == "4":
+        for i in range(10, 21):
+            print(f"{i} ruut on {i ** 2}")
+
+    elif valik == "5":
+        summa = 0
+        negatiivsed = 0
+        positiivsed = 0
+        nullid = 0
+        try:
+            N = int(input("Sisesta arv N: "))
+            for i in range(N):
+                arv = float(input(f"Sisesta {i + 1}. arv: "))
+                if arv < 0:
+                    summa += arv
+                    negatiivsed += 1
+                elif arv > 0:
+                    positiivsed += 1
+                else:
+                    nullid += 1
+            print(f"Negatiivsete arvude summa on: {summa}")
+            print(f"Negatiivsete arvude arv: {negatiivsed}")
+            print(f"Positiivsete arvude arv: {positiivsed}")
+            print(f"Nullide arv: {nullid}")
+        except ValueError:
+            print("Sisestatud väärtus ei ole arv.")
+
+    elif valik == "0":
+        print("Väljun programmist.")
+        break
+
+    else:
+        print("Tundmatu valik.")
+
+#2 0
+summa = 0
+for arv in range(1, 51):
+    if arv % 5 == 0 or arv % 7 == 0:
+        summa += arv
+#2 1
+print("Summa on:", summa)
+arvud = []
+for i in range(10):
+    arv = float(input(f"Sisesta {i + 1}. arv: "))
+    arvud.append(abs(arv))
+#2 2
+print("Tulemus:", arvud)
+summa = 0
+for arv in range(100, 201):
+    if arv % 17 == 0:
+        summa += arv
+        n = int(input("Sisesta punktide arv N: "))
+a = float(input("Sisesta ringi keskpunkti x-koordinaat (a): "))
+b = float(input("Sisesta ringi keskpunkti y-koordinaat (b): "))
+r = float(input("Sisesta ringi raadius R: "))
+#2 3
+ringis_punkte = 0
+for i in range(n):
+    x = float(input(f"Sisesta {i + 1}. punkti x: "))
+    y = float(input(f"Sisesta {i + 1}. punkti y: "))
+    if (x - a) ** 2 + (y - b) ** 2 <= r ** 2:
+        ringis_punkte += 1
+
+print("Ringi sisse jääb punkte:", ringis_punkte)
+# 2 4
+n = int(input("Sisesta õpilaste arv N: "))
+pikkuste_summa = 0
+
+for i in range(n):
+    pikkus = float(input(f"Sisesta {i + 1}. õpilase pikkus (cm): "))
+    pikkuste_summa += pikkus
+
+if n > 0:
+    keskmine = pikkuste_summa / n
+    print(f"Õpilaste keskmine pikkus on {keskmine:.1f} cm")
+else:
+    print("Õpilasi ei sisestatud.")
+    while True:
+        print("Vali ülesanne 1–5, 0 väljumiseks:")
+    valik = input("Sisesta valik: ")
+
